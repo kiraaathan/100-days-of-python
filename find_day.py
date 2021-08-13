@@ -1,8 +1,8 @@
 # Find day of the week from the date
 
 print("Enter the date in (DD/MM/YY) format")
-print("Day:")
 
+print("Day:")
 day = int(input())
 print("Month:")
 month = int(input())
