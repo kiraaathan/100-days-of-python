@@ -18,6 +18,12 @@ else:
     if random_hand == user_hand:
         print("Draw Match!")
     elif random_hand > user_hand:
-        print("You lose!")
+        if user_hand == 2 and random_hand == 1:
+            print("You win!")
+        else:
+            print("You lose!")
     elif random_hand < user_hand:
-        print("You win!")
+        if user_hand == 0 and random_hand == 2:
+            print("You lose!")
+        else:
+            print("You win!")
