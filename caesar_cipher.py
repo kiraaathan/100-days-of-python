@@ -46,16 +46,15 @@ alphabets = [
     "z",
 ]
 choice = input("Press E for encryption and D for decryption:")
-if choice != "E" or choice != "e" or choice != "D" or choice != "D":
-    print("Invalid choice!")
-    exit()
-text = input("Enter the text:").lower()
-shift = int(input("Enter the shift value:"))
-shift = shift % 26
+if choice == "E" or choice == "e" or choice == "D" or choice == "D":
+    text = input("Enter the text:").lower()
+    shift = int(input("Enter the shift value:"))
+    shift = shift % 26
 
-if choice == "E" or choice == "e":
-    encryption(text, shift)
-elif choice == "D" or choice == "d":
-    decryption(text, shift)
+    if choice == "E" or choice == "e":
+        encryption(text, shift)
+    elif choice == "D" or choice == "d":
+        decryption(text, shift)
 else:
     print("Invalid choice!")
+    exit()
