@@ -41,6 +41,7 @@ while cipher_status == True:
         print(f"Modded message is: \n{modded_message}")
         user_discontinue = input("Do you want to stop? (type yes to stop): ")
         if user_discontinue == "yes":
+            print("Goodbye Human! Stay safe.")
             cipher_status = False
 
     except ValueError:
