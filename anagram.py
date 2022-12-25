@@ -12,7 +12,6 @@ for i in w2:
     if i != " ":
         w2_list += i
 size = w1_list + w2_list
-
 # sorting in ascedning
 sorted_string1 = sorted(w1_list)
 sorted_string2 = sorted(w2_list)
@@ -28,3 +27,6 @@ if anagram is True:
     print(f" {w1} & {w2} are Anagrams!")
 else:
     print(f" {w1} & {w2} are not anagrams!")
+
+
+print(" {w1} is a string")
